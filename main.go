@@ -37,10 +37,10 @@ func main() {
 			EnvVar: "SALT_AUTH",
 		},
 	}
-	app.Action = func(c *cli.Context) {
+	app.Action = func(c *cli.Context) error {
 		if len(c.Args()) < 2 {
 			fmt.Println("pepper <target> <function> [ARGUMENTS ...]")
-			return
+			return nil
 		}
 
 		hostname := c.String("hostname")
@@ -61,6 +61,7 @@ func main() {
 
 		response, _ := salt.Run(target, function, arguments)
 		fmt.Println(response)
+		return nil
 	}
 
 	app.Run(os.Args)
