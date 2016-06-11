@@ -37,7 +37,7 @@ GLOBAL OPTIONS:
 
 ## Examples
 ```bash
-pepper -H https://saltmaster -u salt_user -p password '*' test.ping
+pepper -H https://saltmaster -u salt_user -p password -a ldap '*' test.ping
 ```
 Or, if you set the following environment variables:
 ```bash
