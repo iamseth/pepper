@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 )
 
 func main() {
