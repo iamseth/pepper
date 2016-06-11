@@ -36,7 +36,17 @@ GLOBAL OPTIONS:
 ```
 
 ## Examples
-
+```bash
+pepper -H https://saltmaster -u salt_user -p supercoolpassword '*' test.ping
+```
+Or, if you set your environment variables
+```bash
+SALT_USER
+SALT_HOST
+SALT_AUTH
+SALT_PASSWORD
+```
+you can just do the following:
 ```bash
 # Ping all your hosts
 pepper '*' test.ping
