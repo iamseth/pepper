@@ -37,14 +37,14 @@ GLOBAL OPTIONS:
 
 ## Examples
 ```bash
-pepper -H https://saltmaster -u salt_user -p supercoolpassword '*' test.ping
+pepper -H https://saltmaster -u salt_user -p password '*' test.ping
 ```
-Or, if you set your environment variables
+Or, if you set the following environment variables:
 ```bash
-SALT_USER
-SALT_HOST
-SALT_AUTH
-SALT_PASSWORD
+$SALT_USER
+$SALT_HOST
+$SALT_AUTH
+$SALT_PASSWORD
 ```
 you can just do the following:
 ```bash
