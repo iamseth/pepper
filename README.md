@@ -39,11 +39,11 @@ GLOBAL OPTIONS:
 
 ```bash
 # Ping all your hosts
-peppa '*' test.ping
+pepper '*' test.ping
 
 # Restart Apache on your web servers
-peppa 'web*' cmd.run 'service httpd restart'
+pepper 'web*' cmd.run 'service httpd restart'
 
 # Run a highstate on your Redis boxes
-peppa 'redis*' state.highstate
+pepper 'redis*' state.highstate
 ```
